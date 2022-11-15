@@ -11,6 +11,11 @@ function Country() {
             });
     }, []);
 
+    const handleRemoveCountry = (name) =>{
+        const newCountries = countries.filter(country => country.name.common !== name);
+        setCountries(newCountries);
+    }
+
     return (
         <>
             {
@@ -25,7 +30,10 @@ function Country() {
                                 <p>Area: {country.area}</p>
                                 <img src={country.flags.png} alt={country.name.common} srcset="" />
                            
-
+                                <br />
+                                <button className='btn btn-danger mt-3' onClick={()=>{
+                                    handleRemoveCountry(country.name.common);
+                                }}>Delete</button>
                         </div>
                     </>
                 ))
