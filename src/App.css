@@ -7,6 +7,6 @@
   border-right: 4px solid red;
   padding: 12px;
 }
-h2{
+h2, .search-box{
   text-align: center;
 }
