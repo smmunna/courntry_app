@@ -1,0 +1,9 @@
+.row{
+  margin: 32px;
+}
+.mycard{
+  padding: 12px;
+  border-bottom: 4px solid red;
+  border-right: 4px solid red;
+  padding: 12px;
+}
